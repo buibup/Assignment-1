@@ -3,9 +3,9 @@ N tire architecture
 
   1. [ ] ศึกษาโครงสร้าง Project แบบ N tire architecture
   2. [ ] ทำหน้าจอ 
-    - [ ] Add/Edit/Delete Account
-    - [ ] Search Account and / or amount
-    - [ ] validation
+      - [ ] Add/Edit/Delete Account
+      - [ ] Search Account and / or amount
+      - [ ] validation
         - [ ] Account No format - client
         - [ ] Exist Account No - server
   3. [ ] ติดต่อด้วย Store Procedure
