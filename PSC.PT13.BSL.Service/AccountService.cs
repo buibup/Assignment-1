@@ -196,6 +196,23 @@ namespace PSC.PT13.BSL.Service
                 throw;
             }            
         }
+
+        public AccountEntity[] Search(string search)
+        {
+            try
+            {
+                using(IAccountData accountData = Builder.AccountData())
+                {
+                    Entities.AccountEntity ac = new AccountEntity();
+                    ac.Equals("");
+                    return this.ConvertDataTableToEntities(accountData.ListAccount(search).Tables[0]);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new BSLException("Search event occurs an error.[" + ex.Message + "]", ex, true);
+            }
+        }
         #endregion
     }
 }

@@ -6,7 +6,7 @@ namespace PSC.PT13.DAL.IData
     public interface IAccountData : IDisposable
     {
         DataSet GetAccount(string accountNo);
-        DataSet ListAccount(string accountNo);
+        DataSet ListAccount(string search);
         bool AddAccount(string accountNo);
         bool UpdateAccount(string accountNo, decimal balance);
         bool DeleteAccount(string accountNo);

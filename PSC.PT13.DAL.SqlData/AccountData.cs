@@ -37,14 +37,14 @@ namespace PSC.PT13.DAL.SqlData
                 throw;
             }
         }
-        public System.Data.DataSet ListAccount(string accountNo)
+        public System.Data.DataSet ListAccount(string search)
         {
             try
             {
                 using (CommandData command = new CommandData())
                 {
                     command.SetStoreProcedure(LIST_ACCOUNT);
-                    command.SetParameter("@AccountNo", System.Data.SqlDbType.NVarChar, accountNo);
+                    command.SetParameter("@Search", System.Data.SqlDbType.NVarChar, search);
                     return command.ExecuteDataSet();
                 }
             }
