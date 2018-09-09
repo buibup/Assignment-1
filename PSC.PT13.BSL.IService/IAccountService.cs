@@ -13,5 +13,9 @@ namespace PSC.PT13.BSL.IService
         void Deposit(string accountNo, decimal money);
         void Withdraw(string accountNo, decimal money);
         void Transfer(string fromAccountNo, string toAccountNo, decimal money);
+        bool UpdateAccount(string accountNo, decimal balance);
+        bool AddAccount(string accountNo, decimal balance);
+        bool DeleteAccount(string accountNo);
+        bool CheckAccount(string accountNo);
     }
 }

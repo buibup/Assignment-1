@@ -53,7 +53,7 @@ namespace PSC.PT13.DAL.SqlData
                 throw ex;
             }
         }
-        public bool AddAccount(string accountNo)
+        public bool AddAccount(string accountNo, decimal balance)
         {
             try
             {
@@ -61,6 +61,7 @@ namespace PSC.PT13.DAL.SqlData
                 {
                     command.SetStoreProcedure(ADD_ACCOUNT);
                     command.SetParameter("@AccountNo", System.Data.SqlDbType.NVarChar, accountNo);
+                    command.SetParameter("@Balance", System.Data.SqlDbType.Decimal, balance);
                     return command.ExecuteNonQuery();
                 }
             }

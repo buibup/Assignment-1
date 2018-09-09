@@ -95,7 +95,7 @@ namespace PSC.PT13.BSL.Service
                 {              
 
                     if (objAccountData.CheckAccount(accountNo)) throw new Exception("Already account.");
-                    if (!objAccountData.AddAccount(accountNo)) throw new Exception("Error: Can not add data");
+                    if (!objAccountData.AddAccount(accountNo, 0)) throw new Exception("Error: Can not add data");
                     scope.Complete();                    
                 }
             }
@@ -211,6 +211,68 @@ namespace PSC.PT13.BSL.Service
             catch (Exception ex)
             {
                 throw new BSLException("Search event occurs an error.[" + ex.Message + "]", ex, true);
+            }
+        }
+
+        public bool UpdateAccount(string accountNo, decimal balance)
+        {
+            try
+            {
+                using(IAccountData accountData = Builder.AccountData())
+                {
+                    return accountData.UpdateAccount(accountNo, balance);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new BSLException("UpdateAccount event occurs an error.[" + ex.Message + "]", ex, true);
+            }
+        }
+
+        public bool AddAccount(string accountNo, decimal balance)
+        {
+            try
+            {
+                if (CheckAccount(accountNo)) { return false; }
+
+                using(IAccountData accountData = Builder.AccountData())
+                {
+                    return accountData.AddAccount(accountNo, balance);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new BSLException("AddAccount event occurs an error.[" + ex.Message + "]", ex, true);
+            }
+        }
+
+        public bool DeleteAccount(string accountNo)
+        {
+            try
+            {
+                using(IAccountData accountData = Builder.AccountData())
+                {
+                    return accountData.DeleteAccount(accountNo);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new BSLException("DeleteAccount event occurs an error.[" + ex.Message + "]", ex, true);
+            }
+        }
+
+        public bool CheckAccount(string accountNo)
+        {
+            try
+            {
+                using(IAccountData accountData = Builder.AccountData())
+                {
+                    return accountData.CheckAccount(accountNo);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new BSLException("DeleteAccount event occurs an error.[" + ex.Message + "]", ex, true);
             }
         }
         #endregion
