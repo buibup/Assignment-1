@@ -9,7 +9,7 @@ N tire architecture
         - [ ] Account No format - client
         - [ ] Exist Account No - server
   3. [x] ติดต่อด้วย Store Procedure
-  4. [ ] เพิ่ม Class Exception UIL, BSL, DAL
+  4. [x] เพิ่ม Class Exception UIL, BSL, DAL
 
 
      ส่งงาน panan.pe@hotmail.com
