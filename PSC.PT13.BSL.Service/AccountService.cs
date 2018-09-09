@@ -275,6 +275,21 @@ namespace PSC.PT13.BSL.Service
                 throw new BSLException("DeleteAccount event occurs an error.[" + ex.Message + "]", ex, true);
             }
         }
+
+        public AccountEntity[] SearchAccountAndBalance(string accountNo, string balance)
+        {
+            try
+            {
+                using(IAccountData accountData = Builder.AccountData())
+                {
+                    return this.ConvertDataTableToEntities(accountData.ListAccount(accountNo, balance).Tables[0]);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new BSLException("SearchAccountAndBalance event occurs an error.[" + ex.Message + "]", ex, true);
+            }
+        }
         #endregion
     }
 }

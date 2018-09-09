@@ -6,6 +6,7 @@ namespace PSC.PT13.BSL.IService
     public interface IAccountService : IDisposable 
     {
         AccountEntity[] SearchAccount(string accountNo);
+        AccountEntity[] SearchAccountAndBalance(string accountNo, string Balance);
         AccountEntity[] Search(string search);
         AccountEntity LoadAccount(string accountNo);
         void OpenNewAccount(string accountNo);

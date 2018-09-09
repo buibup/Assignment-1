@@ -1,4 +1,5 @@
 using System;
+using System.Data;
 using PSC.PT13.DAL.IData;
 
 namespace PSC.PT13.DAL.SqlData
@@ -12,6 +13,7 @@ namespace PSC.PT13.DAL.SqlData
         private const string UPDATE_ACCOUNT = "PT_13_UpdateAccount";
         private const string DELETE_ACCOUNT = "PT_13_DeleteAccount";
         private const string COUNT_ACCOUNT = "PT_13_CountAccount";
+        private const string SEARCH_ACCOUNT_AND_BALANCE = "PT_13_SearchAccountAndBalance";
         #endregion
 
         #region Constructure section
@@ -118,6 +120,25 @@ namespace PSC.PT13.DAL.SqlData
             }
             catch(Exception ex)
             {
+                throw ex;
+            }
+        }
+
+        public DataSet ListAccount(string accountNo, string balance)
+        {
+            try
+            {
+                using(var command = new CommandData())
+                {
+                    command.SetStoreProcedure(SEARCH_ACCOUNT_AND_BALANCE);
+                    command.SetParameter("@AccountNo", System.Data.SqlDbType.NVarChar, accountNo);
+                    command.SetParameter("@Balance", System.Data.SqlDbType.NVarChar, balance);
+                    return command.ExecuteDataSet();
+                }
+            }
+            catch (Exception ex)
+            {
+
                 throw ex;
             }
         }
