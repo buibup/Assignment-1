@@ -1,0 +1,286 @@
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:11:33 AM - SearchAccount event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.SearchAccount(String accountNo) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 58
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:12:50 PM - SearchAccount event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.SearchAccount(String accountNo) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 58
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:00 PM - SearchAccount event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: Dispose
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.SearchAccount(String accountNo) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 58
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:01 PM - SearchAccount event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.SearchAccount(String accountNo) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 58
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:05 PM - SearchAccount event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.SearchAccount(String accountNo) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 58
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:08 PM - Search event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.Search(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 208
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:14 PM - Search event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: Dispose
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.Search(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 208
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:15 PM - SearchAccount event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.SearchAccount(String accountNo) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 58
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:15 PM - SearchAccount event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.SearchAccount(String accountNo) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 58
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:20 PM - SearchAccount event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.SearchAccount(String accountNo) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 58
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:23 PM - Search event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.Search(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 208
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:24 PM - Search event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.Search(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 208
+
+
+
+#######################################################################################
+
+
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/9/2018:1:26 PM - Search event occurs an error.[Object reference not set to an instance of an object.]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 53
+   at PSC.PT13.BSL.Service.AccountService.Search(String search) in C:\Users\Mongk\Desktop\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 208
+
+
+
+#######################################################################################
+
+
