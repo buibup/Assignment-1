@@ -34,9 +34,9 @@ namespace PSC.PT13.DAL.SqlData
                     return command.ExecuteDataSet();
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                throw;
+                throw new DALException("GetAccount event occurs an error.[" + ex.Message + "]", ex, false);
             }
         }
         public System.Data.DataSet ListAccount(string search)
@@ -52,7 +52,7 @@ namespace PSC.PT13.DAL.SqlData
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new DALException("ListAccount event occurs an error.[" + ex.Message + "]", ex, false);
             }
         }
         public bool AddAccount(string accountNo, decimal balance)
@@ -69,7 +69,7 @@ namespace PSC.PT13.DAL.SqlData
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new DALException("AddAccount event occurs an error.[" + ex.Message + "]", ex, false);
             }
         }
         public bool UpdateAccount(string accountNo, decimal balance)
@@ -84,9 +84,9 @@ namespace PSC.PT13.DAL.SqlData
                     return command.ExecuteNonQuery();
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                throw;
+                throw new DALException("UpdateAccount event occurs an error.[" + ex.Message + "]", ex, false);
             }
         }
         public bool DeleteAccount(string accountNo)
@@ -100,9 +100,9 @@ namespace PSC.PT13.DAL.SqlData
                     return command.ExecuteNonQuery();
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                throw;
+                throw new DALException("DeleteAccount event occurs an error.[" + ex.Message + "]", ex, false);
             }
         }
         public bool CheckAccount(string accountNo)
@@ -120,10 +120,9 @@ namespace PSC.PT13.DAL.SqlData
             }
             catch(Exception ex)
             {
-                throw ex;
+                throw new DALException("CheckAccount event occurs an error.[" + ex.Message + "]", ex, false);
             }
         }
-
         public DataSet ListAccount(string accountNo, string balance)
         {
             try
@@ -138,8 +137,7 @@ namespace PSC.PT13.DAL.SqlData
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                throw new DALException("ListAccount event occurs an error.[" + ex.Message + "]", ex, false);
             }
         }
         #endregion
