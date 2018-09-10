@@ -233,6 +233,7 @@ namespace PSC.PT13.BSL.Service
         {
             try
             {
+                // Validation Exist AccountNo 
                 if (CheckAccount(accountNo)) { return false; }
 
                 using(IAccountData accountData = Builder.AccountData())
@@ -272,7 +273,7 @@ namespace PSC.PT13.BSL.Service
             }
             catch (Exception ex)
             {
-                throw new BSLException("DeleteAccount event occurs an error.[" + ex.Message + "]", ex, true);
+                throw new BSLException("CheckAccount event occurs an error.[" + ex.Message + "]", ex, true);
             }
         }
 

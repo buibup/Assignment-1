@@ -39,7 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PSC.Frameworks.Exception">
-      <HintPath>..\..\..\..\..\..\..\BAY\MobileApp\KMA - Krungsri Mobile App\Trunk\Code\Solution Items\PSC.Frameworks.Exception.dll</HintPath>
+      <HintPath>..\..\..\trainning\PSC_Training_Framework\Sample\PSC.PT13.UIL.WebSite\Bin\PSC.Frameworks.Exception.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

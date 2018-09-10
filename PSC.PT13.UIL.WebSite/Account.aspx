@@ -83,9 +83,19 @@
                             <tr>
                                 <td style="width: 150px">AccountNo<br />
                                     <asp:TextBox ID="txtAccountNo" runat="server" Width="140" />
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
+                                        ControlToValidate="txtAccountNo" runat="server"
+                                        ErrorMessage="Only Numbers allowed"
+                                        ValidationExpression="\d+">
+                                    </asp:RegularExpressionValidator>
                                 </td>
                                 <td style="width: 150px">Balance<br />
                                     <asp:TextBox ID="txtBalance" runat="server" Width="140" />
+                                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
+                                        ControlToValidate="txtBalance" runat="server"
+                                        ErrorMessage="Only Numbers allowed"
+                                        ValidationExpression="\d+">
+                                    </asp:RegularExpressionValidator>
                                 </td>
                                 <td style="width: 100px">
                                     <asp:Button ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" />

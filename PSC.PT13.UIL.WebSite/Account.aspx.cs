@@ -75,10 +75,10 @@ public partial class Account : System.Web.UI.Page
         IAccountService objAccountService = null;
         try
         {
+            decimal balance = 0;
             GridViewRow row = GridView1.Rows[e.RowIndex];
             string accountNo = (row.FindControl("txtAccountNo") as TextBox).Text;
             string balanceStr = (row.FindControl("txtBalance") as TextBox).Text;
-            decimal balance = 0;
             decimal.TryParse(balanceStr, out balance);
 
             objAccountService = Builder.AccountService();
@@ -133,11 +133,18 @@ public partial class Account : System.Web.UI.Page
         {
             var accountNo = txtAccountNo.Text;
             var balanceStr = txtBalance.Text;
+            int accNo = 0;
             decimal balance = 0;
-            decimal.TryParse(balanceStr, out balance);
+            var validateAccountNo = int.TryParse(accountNo, out accNo);
+            var validateBalance = decimal.TryParse(balanceStr, out balance);
+
+            if(!(validateAccountNo && validateBalance)) { return; }
 
             objAccountService = Builder.AccountService();
-            objAccountService.AddAccount(accountNo, balance);
+            if(!objAccountService.AddAccount(accountNo, balance))
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Account Exist.');", true);
+            }
         }
         catch (Exception ex)
         {

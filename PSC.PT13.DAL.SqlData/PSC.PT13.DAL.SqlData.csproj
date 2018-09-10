@@ -40,7 +40,7 @@
   <ItemGroup>
     <Reference Include="PSC.Frameworks.Exception, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\PSC.Frameworks.Exception.dll</HintPath>
+      <HintPath>..\..\..\trainning\PSC_Training_Framework\Sample\PSC.PT13.UIL.WebSite\Bin\PSC.Frameworks.Exception.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

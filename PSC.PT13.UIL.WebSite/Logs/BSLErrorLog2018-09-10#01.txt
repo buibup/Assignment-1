@@ -1,0 +1,34 @@
+Exception Summary 
+---------------------------------------------------------------------------------------
+9/10/2018:12:56 AM - Search event occurs an error.[ListAccount event occurs an error.[Object reference not set to an instance of an object.]]
+
+Exception Details --- Error Stack
+--------------------------------------------------------------------------------------
+1) Method: ListAccount
+    Error Code: 0500
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    ListAccount event occurs an error.[Object reference not set to an instance of an object.]
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in E:\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 55
+   at PSC.PT13.BSL.Service.AccountService.Search(String search) in E:\github\Assignment-1\PSC.PT13.BSL.Service\AccountService.cs:line 208
+
+2) Method: Dispose
+    Error Code: -
+    Assembly: PSC.PT13.DAL.SqlData
+    Message: 
+    Object reference not set to an instance of an object.
+
+   Call Stack
+   --------------------------------------------------------------------------------------
+   at PSC.PT13.DAL.SqlData.CommandData.Dispose(Boolean disposing) in E:\github\Assignment-1\PSC.PT13.DAL.SqlData\CommandData.cs:line 32
+   at PSC.PT13.DAL.SqlData.CommandData.Dispose() in E:\github\Assignment-1\PSC.PT13.DAL.SqlData\CommandData.cs:line 66
+   at PSC.PT13.DAL.SqlData.AccountData.ListAccount(String search) in E:\github\Assignment-1\PSC.PT13.DAL.SqlData\AccountData.cs:line 50
+
+
+
+#######################################################################################
+
+
